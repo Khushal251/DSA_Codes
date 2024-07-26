@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            padding: 7px 14px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser event:
+        
+    click
+    contextmenu
+    mouseover/mouseoutt
+    mousedown/mouseup
+    mousemove
+    
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitionend -->
+
+
+    <div class="container">
+        <h3>This is paragraph</h3>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ipsum soluta architecto sapiente recusandae consectetur ullam nobis quia repellendus numquam!</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+
+    <script>
+            let para=document.getElementById('para');
+            para.addEventListener('mouseover',function run()     //mouseover = The mouseover event occurs when the mouse pointer is over the selected element.
+            {
+                alert('mouse inside')
+            });
+
+            para.addEventListener('mouseout',function run()     //mouseover = The mouseover event occurs when the mouse pointer is over the selected element.
+            {
+                alert('mouse went outside')
+            });
+
+            
+
+        function togglehide(){
+            let btn=document.getElementById('btn'); 
+            let para=document.getElementById('para');
+            if(para.style.display!='none')             //para.style.display = The Style display property in HTML DOM is used to set or return the display type of an element. It is similar to the visibility property, which display or hide the element.
+            {
+                para.style.display='none'; 
+            }
+            else
+            {
+                para.style.display='block'; 
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>

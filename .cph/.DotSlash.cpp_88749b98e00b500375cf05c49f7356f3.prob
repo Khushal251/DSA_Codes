@@ -1,0 +1,1 @@
+{"name":"Local: DotSlash","url":"d:\\VS Code Programs\\mydirectory\\DotSlash.cpp","tests":[{"id":1660650106898,"input":"1\n8\n10 9 13 15 3 16 9 13","output":"10 9 13 15 3 16 9 13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VS Code Programs\\mydirectory\\DotSlash.cpp","group":"local","local":true}

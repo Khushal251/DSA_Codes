@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more desining</title>
+</head>
+<style>
+    .container{
+        border: 4px solid yellow;
+        background-color: rgb(179, 139, 139);
+        padding: 50px;
+        margin: 50px auto;
+        width: 666px
+    }
+    a{
+        text-decoration: none;
+        color: green;
+    }
+    a:hover{
+        color: black;
+        background-color: yellow;
+    }
+    a:visited{
+        color: blue;
+        
+    }
+    a:active{
+        background-color: red;
+    }
+    .btn{
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid black;
+        background-color: aqua;
+        padding: 5px;
+        cursor: pointer;
+        font-size: small;
+    }
+    .btn:hover{
+        color: burlywood;
+        background-color: crimson;
+
+    }
+</style>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio nemo quaerat laboriosam nobis, expedita, nostrum et minus quo fuga neque. Adipisci, eius? Eligendi numquam accusamus odio esse officia eaque maiores delectus, totam iure?</p>
+        <a href=" http://amazon.com" class="btn">Read More</a>
+        <button class="btn">Contact us</button>
+
+    </div>
+    
+</body>
+</html>

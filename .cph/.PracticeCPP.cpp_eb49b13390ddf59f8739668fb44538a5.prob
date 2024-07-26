@@ -1,0 +1,1 @@
+{"name":"Local: PracticeCPP","url":"d:\\VS Code Programs\\mydirectory\\PracticeCPP.cpp","tests":[{"id":1662021510217,"input":"3\n3\n11 22 33\n2\n77 88\n3\n44 55 66","output":"11 22 33\n77 88\n44 55 66"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VS Code Programs\\mydirectory\\PracticeCPP.cpp","group":"local","local":true}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- div.container>ul>li*5 -->
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Services</li>
+            <li>More About Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Alphabets are Great</p>
+    </div>
+    <script>
+        let temp=document.getElementById('main');          
+        console.log(temp);
+        let exo=document.getElementById('nav');         //exo.innerHTML
+        console.log(exo);                               //exo.innerHTML="<li>Dynamo</li>"
+        
+
+        let cut=document.getElementsByClassName('container');
+        console.log(cut);
+
+        let sel= document.querySelector('.container');    //query selector returns the first container
+        console.log("Selector returns",sel);
+
+        let dep= document.querySelector('#nav');    //query selector returns the first nav
+        console.log("Selector returns",dep);
+
+        let bro= document.querySelector('#nav>li');   
+        console.log("Selector returns",bro);
+
+        let ade= document.querySelectorAll('#nav>li');       //ade[0].innerHTML="Vipro"
+        console.log("Selector returns",ade);                 //ade[1].innerHTML="Alpha"
+
+
+
+
+    </script>
+</body>
+</html>
